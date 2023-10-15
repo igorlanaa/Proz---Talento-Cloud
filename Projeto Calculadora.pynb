@@ -24,8 +24,8 @@ def calculadora(numero1, numero2, operacao):
   else:
     print(0)
 
-numero1 = int(input("Qual o 1º valor?"))
-numero2 = int(input("Qual o 2º valor?"))
-operacao = int(input("Digite a operação desejada, 1 para soma, 2 para subtração, 3 para multiplicação, 4 para divisão:"))
+numero1 = 5
+numero2 = 8
+operacao = 1
 calculo = calculadora(numero1, numero2, operacao)
 print(calculo)

@@ -11,15 +11,23 @@ def calculadora(numero1, numero2, operacao):
   elif(operacao == 4):
     resultado = numero1 / numero2
     return resultado
-  elif operacao > 4:
-    print("Essa opção não existe")
-  elif operacao == 0:
-      print("Saiu")
   else:
-    print(0)
+    return 0
+ 
+executar = True
 
-numero1 = int(input("Qual o 1º valor?"))
-numero2 = int(input("Qual o 2º valor?"))
-operacao = int(input("Digite a operação desejada, 1 para soma, 2 para subtração, 3 para multiplicação, 4 para divisão, 0 para sair:"))
-calculo = calculadora(numero1, numero2, operacao)
-print(calculo) 
+while(executar == True):
+  print("Digite a Operação desejada")
+  print("1 para soma, 2 para subtração, 3 Multiplicação, 4 para divisão")
+  operacao = int(input())
+  if (operacao < 0) or (operacao > 4):
+    print("Opção inexistente")
+  elif(operacao ==0):
+    executar = False
+  else:
+    print("Insira o 1º número desejado:")
+    numero1 = int(input())
+    print("Insira o 2º número desejado:")
+    numero2 = int(input())
+    resultado = calculadora(numero1, numero2, operacao)
+    print("Resultado =", resultado)

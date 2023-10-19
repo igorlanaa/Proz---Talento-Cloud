@@ -1,0 +1,25 @@
+def calculadora(numero1, numero2, operacao):
+  if(operacao == 1):
+    resultado = numero1 + numero2
+    return resultado
+  elif(operacao == 2):
+    resultado = numero1 - numero2
+    return resultado
+  elif(operacao == 3):
+    resultado = numero1 * numero2
+    return resultado
+  elif(operacao == 4):
+    resultado = numero1 / numero2
+    return resultado
+  elif operacao > 4:
+    print("Essa opção não existe")
+  elif operacao == 0:
+      print("Saiu")
+  else:
+    print(0)
+
+numero1 = int(input("Qual o 1º valor?"))
+numero2 = int(input("Qual o 2º valor?"))
+operacao = int(input("Digite a operação desejada, 1 para soma, 2 para subtração, 3 para multiplicação, 4 para divisão, 0 para sair:"))
+calculo = calculadora(numero1, numero2, operacao)
+print(calculo) 

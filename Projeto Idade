@@ -1,0 +1,18 @@
+def idadeatual(anonascimento, anoatual):
+  if(anoatual <= 2023):
+    resultado = anonascimento - anoatual
+    return resultado
+  else:
+    print("Não é possível calcular sua idade, verifique o ano digitado.")
+
+executar = True
+
+try:
+  Nome = input("Digite seu nome completo: ")
+  anonascimento = int(input("Digite o ano em que você nasceu: "))
+  anoatual = int(input("Digite o ano atual: "))
+except:
+  print("Algo digitado está incorreto, tente novamente")
+
+def idadeatual():
+  print(Nome, "sua idade atual é", idadeatual)
